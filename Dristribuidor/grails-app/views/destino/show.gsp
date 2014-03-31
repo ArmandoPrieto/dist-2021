@@ -23,33 +23,6 @@
 			</g:if>
 			<ol class="property-list destino">
 			
-				<g:if test="${destinoInstance?.ciudad}">
-				<li class="fieldcontain">
-					<span id="ciudad-label" class="property-label"><g:message code="destino.ciudad.label" default="Ciudad" /></span>
-					
-						<span class="property-value" aria-labelledby="ciudad-label"><g:fieldValue bean="${destinoInstance}" field="ciudad"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${destinoInstance?.codigoPostal}">
-				<li class="fieldcontain">
-					<span id="codigoPostal-label" class="property-label"><g:message code="destino.codigoPostal.label" default="Codigo Postal" /></span>
-					
-						<span class="property-value" aria-labelledby="codigoPostal-label"><g:fieldValue bean="${destinoInstance}" field="codigoPostal"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${destinoInstance?.direccion}">
-				<li class="fieldcontain">
-					<span id="direccion-label" class="property-label"><g:message code="destino.direccion.label" default="Direccion" /></span>
-					
-						<span class="property-value" aria-labelledby="direccion-label"><g:fieldValue bean="${destinoInstance}" field="direccion"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${destinoInstance?.estado}">
 				<li class="fieldcontain">
 					<span id="estado-label" class="property-label"><g:message code="destino.estado.label" default="Estado" /></span>
@@ -59,11 +32,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${destinoInstance?.local}">
+				<g:if test="${destinoInstance?.municipio}">
 				<li class="fieldcontain">
-					<span id="local-label" class="property-label"><g:message code="destino.local.label" default="Local" /></span>
+					<span id="municipio-label" class="property-label"><g:message code="destino.municipio.label" default="Municipio" /></span>
 					
-						<span class="property-value" aria-labelledby="local-label"><g:fieldValue bean="${destinoInstance}" field="local"/></span>
+						<span class="property-value" aria-labelledby="municipio-label"><g:fieldValue bean="${destinoInstance}" field="municipio"/></span>
 					
 				</li>
 				</g:if>
@@ -73,6 +46,15 @@
 					<span id="pais-label" class="property-label"><g:message code="destino.pais.label" default="Pais" /></span>
 					
 						<span class="property-value" aria-labelledby="pais-label"><g:fieldValue bean="${destinoInstance}" field="pais"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${destinoInstance?.precio}">
+				<li class="fieldcontain">
+					<span id="precio-label" class="property-label"><g:message code="destino.precio.label" default="Precio" /></span>
+					
+						<span class="property-value" aria-labelledby="precio-label"><g:fieldValue bean="${destinoInstance}" field="precio"/></span>
 					
 				</li>
 				</g:if>

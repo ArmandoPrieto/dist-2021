@@ -3,6 +3,7 @@ package dristribuidor
 
 
 import static org.springframework.http.HttpStatus.*
+import grails.converters.XML
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
@@ -11,8 +12,10 @@ class DestinoController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
-        respond Destino.list(params), model:[destinoInstanceCount: Destino.count()]
+        //params.max = Math.min(max ?: 10, 100)
+        //respond Destino.list(params), model:[destinoInstanceCount: Destino.count()]
+        render Destino.list() as XML
+        
     }
 
     def show(Destino destinoInstance) {
