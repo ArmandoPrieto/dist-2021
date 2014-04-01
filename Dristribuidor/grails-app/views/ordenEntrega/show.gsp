@@ -23,24 +23,6 @@
 			</g:if>
 			<ol class="property-list ordenEntrega">
 			
-				<g:if test="${ordenEntregaInstance?.estado}">
-				<li class="fieldcontain">
-					<span id="estado-label" class="property-label"><g:message code="ordenEntrega.estado.label" default="Estado" /></span>
-					
-						<span class="property-value" aria-labelledby="estado-label"><g:fieldValue bean="${ordenEntregaInstance}" field="estado"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${ordenEntregaInstance?.tracking}">
-				<li class="fieldcontain">
-					<span id="tracking-label" class="property-label"><g:message code="ordenEntrega.tracking.label" default="Tracking" /></span>
-					
-						<span class="property-value" aria-labelledby="tracking-label"><g:fieldValue bean="${ordenEntregaInstance}" field="tracking"/></span>
-					
-				</li>
-				</g:if>
-			
 				<g:if test="${ordenEntregaInstance?.destino}">
 				<li class="fieldcontain">
 					<span id="destino-label" class="property-label"><g:message code="ordenEntrega.destino.label" default="Destino" /></span>

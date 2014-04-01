@@ -6,12 +6,16 @@ import data.Persona
 class OrdenEntrega {
     
    // Persona persona
-    List<Producto> productos
+    List productos
     Destino destino
-    //
-   // String destino
-//String estado
-    //String tracking
+    String direccion
+    String tracking
+    String estado
+     static hasMany = [productos: Producto]
+//
+    
+
+    
 
     static constraints = {
       /*  estado(blank: true, nullable:true)
